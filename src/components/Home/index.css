@@ -1,0 +1,78 @@
+/* Write your CSS code here */
+.home-page-container {
+  padding: 20px;
+  height: 100vh;
+}
+
+.cloths-heading {
+  font-size: 30px;
+  font-family: 'Roboto';
+  color: #1e293b;
+  text-align: center;
+}
+.cloths-image {
+  min-width: 150px;
+}
+.content-cloths-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: #64748b;
+  text-align: center;
+}
+.shop-button {
+  outline: none;
+  border: none;
+  background-color: #0b69ff;
+  color: #ffffff;
+  height: 34px;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 6px;
+  font-family: 'Roboto';
+  margin-top: 10px;
+  cursor: pointer;
+}
+.cloths-image-container {
+  display: flex;
+  width: 90%;
+  max-width: 250px;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .cloths-image-container {
+    display: none;
+  }
+  .cloths-image-desktop {
+    min-width: 150px;
+  }
+  .cloths-image-desktop-container {
+    display: flex;
+    width: 90%;
+    max-width: 250px;
+  }
+  .content-cloths-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cloths-image-desktop-container {
+    display: none;
+  }
+  .cloths-image-desktop {
+    display: none;
+  }
+}

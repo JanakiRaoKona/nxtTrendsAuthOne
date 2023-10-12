@@ -1,0 +1,70 @@
+/* Write your CSS code here */
+.nav-link-item {
+  text-decoration: none;
+  outline: none;
+}
+.mobile-view-first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.logo-image {
+  width: 100px;
+  cursor: pointer;
+}
+.image-logout {
+  width: 20px;
+  cursor: pointer;
+}
+.nav-image {
+  width: 20px;
+  cursor: pointer;
+}
+.second-nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6f6ff;
+  padding: 12px;
+}
+@media screen and (min-width: 768px) {
+  .image-logout {
+    display: none;
+  }
+  .second-nav-container {
+    display: none;
+  }
+  .desk-top-menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+  }
+  .menu-names {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #475569;
+    padding: 10px;
+  }
+  .desk-top-button {
+    background-color: #0967d2;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 16px;
+    outline: none;
+    border: none;
+    height: 26px;
+    width: 90px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  .desk-top-menu-bar {
+    display: none;
+  }
+}
